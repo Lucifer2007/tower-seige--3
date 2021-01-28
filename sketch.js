@@ -68,11 +68,11 @@ function setup() {
 
 
 function draw() {
-  rectMode(CENTER);
+ 
   if(backg) 
   background(backg);
 
-
+  rectMode(CENTER);
   textSize(70)
   fill("red")
   textFont(" Bold")
@@ -149,7 +149,7 @@ function keyPressed(){
   async function getTime(){
 
 
-   var getinfo = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
+   var getinfo = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata")
    var infotype = await getinfo.json();
    
 
